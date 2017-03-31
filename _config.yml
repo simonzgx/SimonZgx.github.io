@@ -13,7 +13,7 @@ baseurl: ""                             # for example, '/blog' if your blog host
 # SNS settings
 RSS: false
 #weibo_username:     huxpro
-zhihu_username:    张乎
+zhihu_username:    zhang-hu-20-73
 github_username:   SimonZgx
 #twitter_username:  huxpro
 #facebook_username:  huxpro
@@ -70,7 +70,7 @@ kramdown:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "All knowledge is,in final analysis,history<br>All sciences are,in the abstact,mathematics<br>All judgements are,in their rationale,statistics"
+sidebar-about-description: "在终极的分析中，一切知识都是历史<br>在抽象的意义下，一切科学都是数学<br>在理性的基础上，所有的判断都是统计学"
 sidebar-avatar: /img/joker.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
