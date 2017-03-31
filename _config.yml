@@ -2,8 +2,8 @@
 title: Simon's Blog
 SEOTitle: Simon's |  Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: ""
+email: simonzgx@gmail.com
+description: "python programer, data analyst, trader"
 keyword: ""
 url: "https://simonzgx.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -12,11 +12,11 @@ baseurl: ""                             # for example, '/blog' if your blog host
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
+#weibo_username:     huxpro
+#zhihu_username:     huxpro
+#github_username:    huxpro
 #twitter_username:  huxpro
-facebook_username:  huxpro
+#facebook_username:  huxpro
 # linkedin_username:  firstname-lastname-idxxxx
 
 
