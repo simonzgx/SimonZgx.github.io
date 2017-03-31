@@ -4,7 +4,7 @@ SEOTitle: Blog
 header-img: img/darkknight.jpg
 email: simonzgx@gmail.com
 description: "python programer, data analyst, trader"
-keyword: ""
+keyword: "python programer, data analyst, trader"
 url: "https://simonzgx.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -70,7 +70,7 @@ kramdown:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程"
+sidebar-about-description: "在终极的分析中，一切知识都是历史<br>在抽象的意义下，一切科学都是数学<br>在理性的基础上，所有的判断都是统计学"
 sidebar-avatar: /img/joker.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
