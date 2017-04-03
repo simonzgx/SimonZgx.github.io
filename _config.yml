@@ -70,7 +70,7 @@ kramdown:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "在终极的分析中，一切知识都是历史<br>在抽象的意义下，一切科学都是数学<br>在理性的基础上，所有的判断都是统计学"
+sidebar-about-description: "在终极的分析中，<br>一切知识都是历史<br>在抽象的意义下，<br>一切科学都是数学<br>在理性的基础上，<br>所有的判断都是统计学"
 sidebar-avatar: /img/joker.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
