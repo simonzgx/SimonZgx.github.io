@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      "Hello GitHub1"
+title:      "CTP&IB 1.0.0Beta"
 subtitle:   " \"Hello World, Hello GitHub\""
-date:       2017-03-31 19:00:00
+date:       2017-04-05 19:00:00
 author:     "Simon"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
