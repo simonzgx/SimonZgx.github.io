@@ -4,7 +4,7 @@ title:      "CTP/IB 套利策略 1.0.0"
 subtitle:   " \"VNPY, python, Programmed Trading\""
 date:       2017-03-31 19:00:00
 author:     "Simon"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/post-20170405.jpg"
 catalog: true
 tags:
     - Python
@@ -26,45 +26,140 @@ tags:
 
 当前只实现了在策略内能获取不同接口合约的tick信息，未涉及交易部分。
 
-更新详见<a href="https://github.com/SimonZgx/vnTrader">我的Github</a>
-
 <p id = "build"></p>
 ---
 
 ## 踩过的坑
 
 	
-1.由于IB不对外直接开放接口，程序化交易只能通过本地TWS来间接交易，所以本地TWS的配置一定要对，步骤如下
+**1.由于IB不对外直接开放接口，程序化交易只能通过本地TWS来间接交易，所以本地TWS的配置一定要对，步骤如下**
 * 在TWS的Edit > Global Configuration菜单打开的对话框中，左边栏选择API > Settings。
 * 确认允许ActiveX和socket客户端；确认端口号和VN.PY的IB_connect.json中的设置一致。
 * 可以设置可信的API应用的IP地址列表。
 
-2.直接从VNPY作者Github上Down下来的代码是没有对IB做编译的，需要自己编译，步骤如下
+
+**2.直接从VNPY作者Github上Down下来的代码是没有对IB做编译的，需要自己编译，步骤如下**
 * 先进入vn.ib/ibapi/linux文件夹下运行bash build.sh生成twsapi.so
 * 然后回到vn.ib文件夹下运行bash build.sh生成vnib.so
 * 最后将生成的两个.so文件放入 IBGateway文件夹下
 
-3.在使用VNPY订阅合约时需要一个localSymbol，这个代码需要在TWS查的
+
+**3.在使用VNPY订阅合约时需要一个localSymbol，这个代码需要在TWS查的**
 * 首先在TWS界面订阅想要的合约
 * 右键该合约，查看合约描述，在弹出的窗口里找到localSymbol,exchange,currency,secType几个字段
 * 如CL合约一次为CLK7,NYMEX,USD,FUT，填入VNPY界面敲回车即可订阅行情
 
-## 原版代码逻辑
+## 代码逻辑
+
+在原版**CtaEngine.py**中使用如下方法添加策略，同时建立**合约**和**策略**的映射
+	
+<pre class="python" name="code">#define EX_OK           0       /* successful termination */
+
+    def loadStrategy(self, setting):
+        """载入策略"""
+        try:
+            name = setting['name']
+            className = setting['className']
+        except Exception, e:
+            self.writeCtaLog(u'载入策略出错：%s' %e)
+            return
+        
+        # 获取策略类
+        strategyClass = STRATEGY_CLASS.get(className, None)
+        if not strategyClass:
+            self.writeCtaLog(u'找不到策略类：%s' %className)
+            return
+        
+        # 防止策略重名
+        if name in self.strategyDict:
+            self.writeCtaLog(u'策略实例重名：%s' %name)
+        else:
+            # 创建策略实例
+            strategy = strategyClass(self, setting)  
+            self.strategyDict[name] = strategy
+            
+            # 保存Tick映射关系
+            if strategy.vtSymbol in self.tickStrategyDict:
+                l = self.tickStrategyDict[strategy.vtSymbol]
+            else:
+                l = []
+                self.tickStrategyDict[strategy.vtSymbol] = l
+            l.append(strategy)
+            
+            # 订阅合约
+            contract = self.mainEngine.getContract(strategy.vtSymbol)
+            if contract:
+                req = VtSubscribeReq()
+                req.symbol = contract.symbol
+                req.exchange = contract.exchange
+                
+                # 对于IB接口订阅行情时所需的货币和产品类型，从策略属性中获取
+                req.currency = strategy.currency
+                req.productClass = strategy.productClass
+                
+                self.mainEngine.subscribe(req, contract.gatewayName)
+            else:
+                self.writeCtaLog(u'%s的交易合约%s无法找到' %(name, strategy.vtSymbol))      /* maximum listed value */</pre>
+代码中的**tickStrategyDict**是一个保存了合约和策略映射关系的字典，通过这个字典，来自底层的tick会知道有哪些策略关心它，从而执行这些策略的onTick
+
+但是这里有一个问题，在订阅合约的时候productClass，currency字段只考虑了策略类中的属性，当多个合约不一样时就会出问题,所以我增加了如下代码来单独订阅IB合约
+
+<pre class="python" name="code">#define EX_OK           0       /* successful termination */
+		if "." in vtSymbol:
+			req = VtSubscribeReq()
+			req.symbol = vtSymbol[:vtSymbol.index('.')]
+			req.exchange = vtSymbol[vtSymbol.index('.')+1:]
+                
+			# 对于IB接口订阅行情时所需的货币和产品类型，从策略属性中获取
+			req.currency = strategy.currency
+			req.productClass = strategy.productClass
+			self.mainEngine.subscribe(req, "IB")
+		    continue      /* maximum listed value */</pre>
+由于IB合约在填写的时候格式为symbol.exchange，所以如果合约代码中有 '.' 就会单独订阅它，不影响另外一个CTP合约
 
 
+对于策略配置窗口，我在**uiCtaWidget.py**文件中增加了 **class strategyWindow**来管理不同策略类的配置窗口
+<pre class="python" name="code">#define EX_OK           0       /* successful termination */
+class strategyWindow(QtGui.QMainWindow):
+
+    def __init__(self,ParamWindow,ParamWindow2,ParamWindow3,CtaEngineManager=None):
+		super(strategyWindow,self).__init__()
+		self.setWindowTitle(u"策略类型")
+		self.pw = ParamWindow
+		self.gt = ParamWindow2
+		self.cai = ParamWindow3
+		self.ce = CtaEngineManager      /* maximum listed value */</pre>
+
+其中pw,gt,cai三个成员分别对应当前的三个策略类，这三个类分别在各自的策略文件中定义，在**class CtaEngineManager**初始化
+<pre class="python" name="code">#define EX_OK           0       /* successful termination */
+class CtaEngineManager(QtGui.QWidget):
+    """CTA引擎管理组件"""
+    signal = QtCore.pyqtSignal(type(Event()))
+
+    #----------------------------------------------------------------------
+    def __init__(self, ctaEngine, eventEngine, parent=None):
+        """Constructor"""
+        super(CtaEngineManager, self).__init__(parent)
+        
+        self.ctaEngine = ctaEngine
+        self.eventEngine = eventEngine
+        
+        self.strategyLoaded = False
+		self.pw = ParamWindow("","","",self)
+		self.gt = ParamWindow2("","","",self)
+		self.cai = ParamWindow3("","","",self)
+        self.sw = strategyWindow(self.pw, self.gt,self.cai)
+        self.initUi()
+        self.registerEvent()
+        # 记录日志
+        self.ctaEngine.writeCtaLog(u'CTA引擎启动成功')            /* maximum listed value */</pre>
 
 
-
-
-
-
-
-
-
-
+本次更新还涉及增加IB交易所和原有的两个策略的BUG修复等，就不在一一赘述了，更新详见<a href="https://github.com/SimonZgx/vnTrader">我的Github</a>
+			
 ## 后记
 
 
-—— Simon 于2017.3
+—— Simon 于2017.4
 
 
