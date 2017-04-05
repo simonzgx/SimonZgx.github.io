@@ -4,7 +4,7 @@ title:      "CTP/IB 套利策略 1.0.0"
 subtitle:   " \"VNPY, python, Programmed Trading\""
 date:       2017-03-31 19:00:00
 author:     "Simon"
-header-img: "img/post-20170405.jpg"
+header-img: "img/contact-bg.jpg"
 catalog: true
 tags:
     - Python
