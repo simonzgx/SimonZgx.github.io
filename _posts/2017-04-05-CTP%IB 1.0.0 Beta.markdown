@@ -35,46 +35,23 @@ tags:
 
 	
 1.由于IB不对外直接开放接口，程序化交易只能通过本地TWS来间接交易，所以本地TWS的配置一定要对，步骤如下
-*在TWS的Edit > Global Configuration菜单打开的对话框中，左边栏选择API > Settings。
-*确认允许ActiveX和socket客户端；确认端口号和VN.PY的IB_connect.json中的设置一致。
-*可以设置可信的API应用的IP地址列表。
+* 在TWS的Edit > Global Configuration菜单打开的对话框中，左边栏选择API > Settings。
+* 确认允许ActiveX和socket客户端；确认端口号和VN.PY的IB_connect.json中的设置一致。
+* 可以设置可信的API应用的IP地址列表。
 
 2.直接从VNPY作者Github上Down下来的代码是没有对IB做编译的，需要自己编译，步骤如下
-*先进入vn.ib/ibapi/linux文件夹下运行bash build.sh生成twsapi.so
-*然后回到vn.ib文件夹下运行bash build.sh生成vnib.so
-*最后将生成的两个.so文件放入 IBGateway文件夹下
+* 先进入vn.ib/ibapi/linux文件夹下运行bash build.sh生成twsapi.so
+* 然后回到vn.ib文件夹下运行bash build.sh生成vnib.so
+* 最后将生成的两个.so文件放入 IBGateway文件夹下
 
 3.在使用VNPY订阅合约时需要一个localSymbol，这个代码需要在TWS查的
-*首先在TWS界面订阅想要的合约
-*右键该合约，查看合约描述，在弹出的窗口里找到localSymbol,exchange,currency,secType几个字段
-*如CL合约一次为CLK7,NYMEX,USD,FUT，填入VNPY界面敲回车即可订阅行情
+* 首先在TWS界面订阅想要的合约
+* 右键该合约，查看合约描述，在弹出的窗口里找到localSymbol,exchange,currency,secType几个字段
+* 如CL合约一次为CLK7,NYMEX,USD,FUT，填入VNPY界面敲回车即可订阅行情
 
 ## 原版代码逻辑
 
-1.首先是底层，底层IBGateway通过下面这个方法来处理tick
 
-<pre class="python" name="code">    def tickPrice(self, tickerId, field, price, canAutoExecute):
-        """行情价格相关推送"""
-        if field in tickFieldMap:
-            # 对于股票、期货等行情，有新价格推送时仅更新tick缓存
-            # 只有当发生成交后，tickString更新最新成交价时才推送新的tick
-            # 即bid/ask的价格变动并不会触发新的tick推送
-            tick = self.tickDict[tickerId]
-            key = tickFieldMap[field]
-            tick.__setattr__(key, price)
-            
-            # IB的外汇行情没有成交价和时间，通过本地计算生成，同时立即推送
-            if self.tickProductDict[tickerId] == PRODUCT_FOREX:
-                tick.lastPrice = (tick.bidPrice1 + tick.askPrice1) / 2
-                dt = datetime.now()
-                tick.time = dt.strftime('%H:%M:%S.%f')
-                tick.date = dt.strftime('%Y%m%d')
-            
-                # 行情数据更新
-                newtick = copy(tick)
-                self.gateway.onTick(newtick)
-        else:
-            print field      /* maximum listed value */</pre>
 
 
 
