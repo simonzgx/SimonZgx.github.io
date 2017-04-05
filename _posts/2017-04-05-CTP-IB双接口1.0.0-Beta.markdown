@@ -1,17 +1,17 @@
 ---
 layout:     post
-title:      "CTP&IB 1.0.0 Beta"
-subtitle:   " \"VNPY, python, Programed Trading\""
-date:       2017-04-05 19:00:00
+title:      "Hello GitHub1"
+subtitle:   " \"Hello World, Hello GitHub\""
+date:       2017-03-31 19:00:00
 author:     "Simon"
-header-img: "img/contact-bg.jpg"
+header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
-    - Python
-	- VNPY
+    - 生活
 ---
 
 > “Yeah It's on. ”
+
 
 
 ## 前言
