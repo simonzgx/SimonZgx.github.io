@@ -105,15 +105,15 @@ tags:
 但是这里有一个问题，在订阅合约的时候productClass，currency字段只考虑了策略类中的属性，当多个合约不一样时就会出问题,所以我增加了如下代码来单独订阅IB合约
 <pre class="python" name="code">
 	if "." in vtSymbol:
-        req = VtSubscribeReq()
-        req.symbol = vtSymbol[:vtSymbol.index('.')]
-        req.exchange = vtSymbol[vtSymbol.index('.')+1:]
+		req = VtSubscribeReq()
+		req.symbol = vtSymbol[:vtSymbol.index('.')]
+		req.exchange = vtSymbol[vtSymbol.index('.')+1:]
                 
 		# 对于IB接口订阅行情时所需的货币和产品类型，从策略属性中获取
-        req.currency = strategy.currency
-        req.productClass = strategy.productClass
-        self.mainEngine.subscribe(req, "IB")
-        continue      </pre>
+		req.currency = strategy.currency
+		req.productClass = strategy.productClass
+		self.mainEngine.subscribe(req, "IB")
+		continue      </pre>
 由于IB合约在填写的时候格式为symbol.exchange，所以如果合约代码中有 '.' 就会单独订阅它，不影响另外一个CTP合约
 
 
@@ -142,15 +142,15 @@ class CtaEngineManager(QtGui.QWidget):
         super(CtaEngineManager, self).__init__(parent)
         
         self.ctaEngine = ctaEngine
-        self.eventEngine = eventEngine
+		self.eventEngine = eventEngine
         
-        self.strategyLoaded = False
-        self.pw = ParamWindow("","","",self)
-        self.gt = ParamWindow2("","","",self)
-        self.cai = ParamWindow3("","","",self)
-        self.sw = strategyWindow(self.pw, self.gt,self.cai)
-        self.initUi()
-        self.registerEvent()
+		self.strategyLoaded = False
+		self.pw = ParamWindow("","","",self)
+		self.gt = ParamWindow2("","","",self)
+		self.cai = ParamWindow3("","","",self)
+		self.sw = strategyWindow(self.pw, self.gt,self.cai)
+		self.initUi()
+		self.registerEvent()
         # 记录日志
         self.ctaEngine.writeCtaLog(u'CTA引擎启动成功')           </pre>
 
