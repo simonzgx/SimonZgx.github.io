@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "CTP&IB 1.0.0Beta"
-subtitle:   " \"Python, Programed Trading, VNPY\""
+subtitle:   " \"Python, Program Trading, VNPY\""
 date:       2017-04-05 19:00:00
 author:     "Simon"
 header-img: "img/contact-bg.jpg"
@@ -122,7 +122,7 @@ tags:
 <pre class="python" name="code">
 class strategyWindow(QtGui.QMainWindow):
 
-    def __init__(self,ParamWindow,ParamWindow2,ParamWindow3,CtaEngineManager=None):
+	def __init__(self,ParamWindow,ParamWindow2,ParamWindow3,CtaEngineManager=None):
 		super(strategyWindow,self).__init__()
 		self.setWindowTitle(u"策略类型")
 		self.pw = ParamWindow
@@ -148,7 +148,7 @@ class CtaEngineManager(QtGui.QWidget):
 		self.pw = ParamWindow("","","",self)
 		self.gt = ParamWindow2("","","",self)
 		self.cai = ParamWindow3("","","",self)
-        self.sw = strategyWindow(self.pw, self.gt,self.cai)
+		self.sw = strategyWindow(self.pw, self.gt,self.cai)
         self.initUi()
         self.registerEvent()
         # 记录日志
