@@ -104,7 +104,7 @@ tags:
 
 但是这里有一个问题，在订阅合约的时候productClass，currency字段只考虑了策略类中的属性，当多个合约不一样时就会出问题,所以我增加了如下代码来单独订阅IB合约
 <pre class="python" name="code">
-	if "." in vtSymbol:
+if "." in vtSymbol:
 		req = VtSubscribeReq()
 		req.symbol = vtSymbol[:vtSymbol.index('.')]
 		req.exchange = vtSymbol[vtSymbol.index('.')+1:]
@@ -123,7 +123,7 @@ tags:
 class strategyWindow(QtGui.QMainWindow):
 
 	def __init__(self,ParamWindow,ParamWindow2,ParamWindow3,CtaEngineManager=None):
-        super(strategyWindow,self).__init__()
+		super(strategyWindow,self).__init__()
         self.setWindowTitle(u"策略类型")
         self.pw = ParamWindow
         self.gt = ParamWindow2
