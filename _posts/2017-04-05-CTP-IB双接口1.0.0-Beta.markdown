@@ -122,13 +122,13 @@ if "." in vtSymbol:
 <pre class="python" name="code">
 class strategyWindow(QtGui.QMainWindow):
 
-def __init__(self,ParamWindow,ParamWindow2,ParamWindow3,CtaEngineManager=None):
-	super(strategyWindow,self).__init__()
-	self.setWindowTitle(u"策略类型")
-	self.pw = ParamWindow
-	self.gt = ParamWindow2
-	self.cai = ParamWindow3
-	self.ce = CtaEngineManager      </pre>
+    def __init__(self,ParamWindow,ParamWindow2,ParamWindow3,CtaEngineManager=None):
+        super(strategyWindow,self).__init__()
+        self.setWindowTitle(u"策略类型")
+        self.pw = ParamWindow
+        self.gt = ParamWindow2
+        self.cai = ParamWindow3
+        self.ce = CtaEngineManager      </pre>
 
 其中pw,gt,cai三个成员分别对应当前的三个策略类，这三个类分别在各自的策略文件中定义，在**class CtaEngineManager**初始化
 <pre class="python" name="code">
@@ -139,19 +139,19 @@ class CtaEngineManager(QtGui.QWidget):
     #----------------------------------------------------------------------
     def __init__(self, ctaEngine, eventEngine, parent=None):
         """Constructor"""
-		super(CtaEngineManager, self).__init__(parent)
+        super(CtaEngineManager, self).__init__(parent)
         
-		self.ctaEngine = ctaEngine
-		self.eventEngine = eventEngine
+        self.ctaEngine = ctaEngine
+        self.eventEngine = eventEngine
         self.strategyLoaded = False
-		self.pw = ParamWindow("","","",self)
-		self.gt = ParamWindow2("","","",self)
-		self.cai = ParamWindow3("","","",self)
-		self.sw = strategyWindow(self.pw, self.gt,self.cai)
-		self.initUi()
-		self.registerEvent()
+        self.pw = ParamWindow("","","",self)
+        self.gt = ParamWindow2("","","",self)
+        self.cai = ParamWindow3("","","",self)
+        self.sw = strategyWindow(self.pw, self.gt,self.cai)
+        self.initUi()
+        self.registerEvent()
         # 记录日志
-		self.ctaEngine.writeCtaLog(u'CTA引擎启动成功')           </pre>
+        self.ctaEngine.writeCtaLog(u'CTA引擎启动成功')           </pre>
 
 
 本次更新还涉及增加IB交易所和原有的两个策略的BUG修复等，就不在一一赘述了，更新详见<a href="https://github.com/SimonZgx/vnTrader">我的Github</a>
