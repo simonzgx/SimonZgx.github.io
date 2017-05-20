@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Hello GitHub"
+title:      "Test Jupyter"
 subtitle:   " \"Test Jupyter\""
 date:       2017-04-31 19:00:00
 author:     "Simon"
