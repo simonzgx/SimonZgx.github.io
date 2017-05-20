@@ -27,12 +27,9 @@ ps:
 	
 	
 	
-## 正文
-	
+## 正文 
 <br /> 
-<br /> 
-### 点击使用Jupyter nbviewer<a href="http://nbviewer.jupyter.org/github/SimonZgx/SimonZgx.github.io/blob/master/jupyter/jupyters/matplotlib_1.ipynb">运行代码</a
-<br /> 
+##### 点击使用Jupyter nbviewer<a href="http://nbviewer.jupyter.org/github/SimonZgx/SimonZgx.github.io/blob/master/jupyter/jupyters/matplotlib_1.ipynb">运行代码</a>
 <br /> 
 #### 1. 首先查看当前Anaconda的版本
     
