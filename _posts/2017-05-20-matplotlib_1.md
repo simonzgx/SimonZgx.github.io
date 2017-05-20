@@ -199,7 +199,7 @@ fig
 
 
 
-![Alt text](matplotlib_1_files/to/matplotlib_1_7_0.png)
+!['abc'](/matplotlib_1_files/matplotlib_1_7_0.png)
 
 
 
@@ -230,7 +230,7 @@ fig
 
 
 
-![Alt text](matplotlib_1_files/to/matplotlib_1_8_0.png)
+!['asd'](/matplotlib_1_files/to/matplotlib_1_8_0.png)
 
 
 

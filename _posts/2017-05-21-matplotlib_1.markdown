@@ -30,7 +30,7 @@ plt.show()
 ```
 
 
-![png](matplotlib_1_files/matplotlib_1_1_0.png)
+![png](/matplotlib_1_files/matplotlib_1_1_0.png)
 
 
 
@@ -44,7 +44,7 @@ plt.show()
 ```
 
 
-![png](matplotlib_1_files/matplotlib_1_2_0.png)
+![png](/matplotlib_1_files/matplotlib_1_2_0.png)
 
 
 
