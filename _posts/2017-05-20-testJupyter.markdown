@@ -24,11 +24,54 @@ tags:
 
 ## 正文
 
-开通这个博客的主要初衷，一来如前言所说，是我良心发现准备“大干一场”；再者也是想记录一下自己接下来的几年学到的东西。
-	
-由于接下一直到12月底的两百多天，要准备考研，所以更新频率可能没那么高，但也会尽量保持一个月两篇以上，内容包括但不限于我目前手上的VNPY的开发项目的更新，对python语言新的理解，量化研报的复刻等。
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "123\n"
+     ]
+    }
+   ],
+   "source": [
+    "import pandas as pd\n",
+    "\n",
+    "print ('123')"
+   ]
+  }
+ ],
+ "metadata": {
+  "anaconda-cloud": {},
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.5.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 1
+}
 
-好了不多说了，背单词去了
 
 ## 后记
 
