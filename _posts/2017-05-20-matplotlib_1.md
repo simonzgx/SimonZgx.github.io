@@ -63,7 +63,7 @@ plt.show()
 ```
 
 
-![image](/jupyter-img/matplotlib_1_1_0.png)
+![image](/jupyter/jupyters/matplotlib_1_files/matplotlib_1_1_0.png)
 
 
 
@@ -80,7 +80,7 @@ plt.show()
 ```
 
 
-![image](/jupyter-img/matplotlib_1_2_0.png)
+![image](/jupyter/jupyters/matplotlib_1_files/matplotlib_1_2_0.png)
 
 
 
@@ -98,7 +98,7 @@ fig
 
 
 
-![image](/jupyter-img/matplotlib_1_3_0.png)
+![image](/jupyter/jupyters/matplotlib_1_files/matplotlib_1_3_0.png)
 
 
 
@@ -116,7 +116,7 @@ fig
 
 
 
-![image](/jupyter-img/matplotlib_1_4_0.png)
+![image](/jupyter/jupyters/matplotlib_1_files/matplotlib_1_4_0.png)
 
 
 
@@ -135,7 +135,7 @@ fig
 
 
 
-![image](/jupyter-img/matplotlib_1_5_0.png)
+![image](/jupyter/jupyters/matplotlib_1_files/matplotlib_1_5_0.png)
 
 
 
@@ -167,7 +167,7 @@ fig
 
 
 
-![image](/jupyter-img/matplotlib_1_6_0.png)
+![image](/jupyter/jupyters/matplotlib_1_files/matplotlib_1_6_0.png)
 
 
 
@@ -199,7 +199,7 @@ fig
 
 
 
-![image](/jupyter-img/matplotlib_1_7_0.png)
+![image](/jupyter/jupyters/matplotlib_1_files/matplotlib_1_7_0.png)
 
 
 
@@ -230,7 +230,7 @@ fig
 
 
 
-![image](/jupyter-img/matplotlib_1_8_0.png)
+![image](/jupyter/jupyters/matplotlib_1_files/matplotlib_1_8_0.png)
 
 
 
@@ -247,12 +247,14 @@ fig
 
 
 
-![image](/jupyter-img/matplotlib_1_9_0.png)
+![image](/jupyter/jupyters/matplotlib_1_files/matplotlib_1_9_0.png)
 
 
 
 ## 后记
 
 嗨呀好气啊！自这篇文章写完之后的一个多小时我都在纳闷为什么markdown里的图片链接不被解析，原来图片在仓库的目录只能在分支下面的第一个文件夹内，如果目录多了就无法解析！！
+
+上面这句话依然不对，如果用本地文件的目录是可以多个文件夹的
 
 —— Simon 于2017.5
