@@ -63,7 +63,7 @@ plt.show()
 ```
 
 
-![Alt text](matplotlib_1_files/to/matplotlib_1_1_0.png)
+![Alt text](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-notebook/jupyters/matplotlib_1_files/to/matplotlib_1_1_0.png)
 
 
 
@@ -80,7 +80,7 @@ plt.show()
 ```
 
 
-![png](matplotlib_1_files/matplotlib_1_2_0.png)
+![Alt text](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-notebook/jupyters/matplotlib_1_files/matplotlib_1_2_0.png)
 
 
 
@@ -98,7 +98,7 @@ fig
 
 
 
-![Alt text](matplotlib_1_files/to/matplotlib_1_3_0.png)
+![](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-notebook/jupyters/matplotlib_1_files/matplotlib_1_3_0.png)
 
 
 
