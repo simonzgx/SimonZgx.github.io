@@ -63,7 +63,7 @@ plt.show()
 ```
 
 
-![CSDN图标](http://imgtech.gmw.cn/attachement/jpg/site2/20111223/f04da22d7ba7105e1d7507.jpg "这是CSDN的图标")
+![CSDN图标](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-notebook/jupyters/matplotlib_1_files/matplotlib_1_1_0.png "这是CSDN的图标")
 
 
 
