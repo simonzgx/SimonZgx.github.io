@@ -63,7 +63,7 @@ plt.show()
 ```
 
 
-![png](matplotlib_1_files/matplotlib_1_1_0.png)
+![Alt text](matplotlib_1_files/to/matplotlib_1_1_0.png)
 
 
 
@@ -98,7 +98,7 @@ fig
 
 
 
-![png](matplotlib_1_files/matplotlib_1_3_0.png)
+![Alt text](matplotlib_1_files/to/matplotlib_1_3_0.png)
 
 
 
@@ -116,7 +116,7 @@ fig
 
 
 
-![png](matplotlib_1_files/matplotlib_1_4_0.png)
+![Alt text](matplotlib_1_files/to/matplotlib_1_4_0.png)
 
 
 
@@ -135,7 +135,7 @@ fig
 
 
 
-![png](matplotlib_1_files/matplotlib_1_5_0.png)
+![Alt text](matplotlib_1_files/to/matplotlib_1_5_0.png)
 
 
 
@@ -167,7 +167,7 @@ fig
 
 
 
-![png](matplotlib_1_files/matplotlib_1_6_0.png)
+![Alt text](matplotlib_1_files/to/matplotlib_1_6_0.png)
 
 
 
@@ -199,7 +199,7 @@ fig
 
 
 
-![png](matplotlib_1_files/matplotlib_1_7_0.png)
+![Alt text](matplotlib_1_files/to/matplotlib_1_7_0.png)
 
 
 
@@ -230,7 +230,7 @@ fig
 
 
 
-![png](matplotlib_1_files/matplotlib_1_8_0.png)
+![Alt text](matplotlib_1_files/to/matplotlib_1_8_0.png)
 
 
 
@@ -247,7 +247,7 @@ fig
 
 
 
-![png](matplotlib_1_files/matplotlib_1_9_0.png)
+![Alt text](matplotlib_1_files/to/matplotlib_1_9_0.png)
 
 
 
