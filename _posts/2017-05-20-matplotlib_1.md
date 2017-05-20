@@ -50,8 +50,8 @@ sys.version
 
 #### 2. 下面开始我们第一张三角函数的绘制啦
     
-    
-    
+     
+	 
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
