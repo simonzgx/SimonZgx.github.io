@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "matplotlib"
+title:      "Python 数据可视化--matplotlib学习笔记（一）"
 subtitle:   " \"Python, Data Analyse\""
 date:       2017-05-20 12:00:00
 author:     "Simon"
