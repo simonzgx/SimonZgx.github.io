@@ -1,35 +1,4 @@
----
-layout:     post
-title:      "Python数据可视化--matplotlib学习笔记（一）"
-subtitle:   " \"Python, Data Analyse\""
-date:       2017-05-20 12:00:00
-author:     "Simon"
-header-img: "img/coldplay.jpg"
-catalog: true
-tags:
-    - Python
-    - Data Analyse
----
-> “Better code, better life. ”
 
-## 前言
-
-最近一个月基本都在复习考研了...
-
-手上的VNPY项目也没什么大的更新，一转眼距上次更新博客也有一个多月了，最近在<a href="https://www.joinquant.com">Joinquant</a>做研究发现自己对matplotlib掌握的还不是熟练
-
-遂百度了一篇教程，手动敲了一遍，做此记录以备日后学习用
-
-本帖是学习记录的第一帖，接下来的几篇会尽量在两周内更完，话说下个月考六级哦。。。
-
-ps:
-	*今天在博客上更新了jupyter组件，以后发代码类博客就不用那么麻烦啦lalala~~
-	
-	
-	
-## 正文
-
-#### 1. 首先查看当前Anaconda的版本
 
 ```python
 import sys
@@ -46,8 +15,6 @@ sys.version
 
 
 
-#### 2. 下面开始我们第一张三角函数的绘制啦
-
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
@@ -63,12 +30,9 @@ plt.show()
 ```
 
 
- ![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/matplotlib_1_files/matplotlib_1_1_0.png)
+![png](matplotlib_1_files/matplotlib_1_1_0.png)
 
 
-
-
-#### 3. pyplot默认的绘图貌似有点单调哦
 
 ```python
 fig = plt.figure(figsize=(10, 6), dpi=80)
@@ -80,12 +44,9 @@ plt.show()
 ```
 
 
-![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/matplotlib_1_files/matplotlib_1_2_0.png)
+![png](matplotlib_1_files/matplotlib_1_2_0.png)
 
 
-
-
-#### 4. 强迫症患者表示坐标就不能稍微宽一点嘛
 
 ```python
 plt.xlim(x.min()*1.1, x.max()*1.1)
@@ -98,12 +59,10 @@ fig
 
 
 
-![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/matplotlib_1_files/matplotlib_1_3_0.png)
+![png](matplotlib_1_files/matplotlib_1_3_0.png)
 
 
 
-
-#### 5. 舒服多了，但是x坐标不太符合我们对三角函数的认知啊
 
 ```python
 plt.xticks([-np.pi, -np.pi/2, 0, np.pi/2, np.pi])
@@ -116,12 +75,10 @@ fig
 
 
 
-![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/matplotlib_1_files/matplotlib_1_4_0.png)
+![png](matplotlib_1_files/matplotlib_1_4_0.png)
 
 
 
-
-#### 6. 看能不能再改进一下
 
 ```python
 plt.xticks([-np.pi, -np.pi/2, 0, np.pi/2, np.pi],
@@ -135,12 +92,10 @@ fig
 
 
 
-![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/matplotlib_1_files/matplotlib_1_5_0.png)
+![png](matplotlib_1_files/matplotlib_1_5_0.png)
 
 
 
-
-#### 7. 恩好多了，但是这个框框型的坐标系还是不能忍啊!
 
 ```python
 fig = plt.figure(figsize=(10, 6), dpi=80)
@@ -167,12 +122,10 @@ fig
 
 
 
-![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/matplotlib_1_files/matplotlib_1_6_0.png)
+![png](matplotlib_1_files/matplotlib_1_6_0.png)
 
 
 
-
-#### 8.接下来是图例部分
 
 ```python
 plt.plot(x, c, 'b-', lw=2.5, label='cosine')
@@ -199,12 +152,10 @@ fig
 
 
 
-![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/matplotlib_1_files/matplotlib_1_7_0.png)
+![png](matplotlib_1_files/matplotlib_1_7_0.png)
 
 
 
-
-#### 9. 接下来这个部分真的preety coll!
 
 ```python
 t = 2*np.pi/3
@@ -230,12 +181,10 @@ fig
 
 
 
-![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/matplotlib_1_files/matplotlib_1_8_0.png)
+![png](matplotlib_1_files/matplotlib_1_8_0.png)
 
 
 
-
-#### 10. 最后对label稍作修改，打完收工
 
 ```python
 for label in ax.get_xticklabels() + ax.get_yticklabels():
@@ -247,12 +196,6 @@ fig
 
 
 
-![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/matplotlib_1_files/matplotlib_1_9_0.png)
+![png](matplotlib_1_files/matplotlib_1_9_0.png)
 
 
-
-## 后记
-
-嗨呀好气啊！自这篇文章写完之后的一个多小时我都在纳闷为什么markdown里的图片链接不被解析，原来图片在仓库的目录只能在分支下面的第一个文件夹内，如果目录多了就无法解析！！
-
-—— Simon 于2017.5
