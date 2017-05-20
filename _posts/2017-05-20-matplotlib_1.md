@@ -63,7 +63,7 @@ plt.show()
 ```
 
 
-![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/matplotlib_1_files/matplotlib_1_1_0.png)
+![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-img/matplotlib_1_1_0.png)
 
 
 
@@ -80,7 +80,7 @@ plt.show()
 ```
 
 
-![Alt text](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-notebook/jupyters/matplotlib_1_files/matplotlib_1_2_0.png)
+![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-img/matplotlib_1_2_0.png)
 
 
 
@@ -98,7 +98,7 @@ fig
 
 
 
-![](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-notebook/jupyters/matplotlib_1_files/matplotlib_1_3_0.png)
+![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-img/matplotlib_1_3_0.png)
 
 
 
@@ -116,7 +116,7 @@ fig
 
 
 
-![Alt text](matplotlib_1_files/to/matplotlib_1_4_0.png)
+![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-img/matplotlib_1_4_0.png)
 
 
 
@@ -135,7 +135,7 @@ fig
 
 
 
-![Alt text](matplotlib_1_files/to/matplotlib_1_5_0.png)
+![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-img/matplotlib_1_5_0.png)
 
 
 
@@ -167,7 +167,7 @@ fig
 
 
 
-![Alt text](matplotlib_1_files/to/matplotlib_1_6_0.png)
+![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-img/matplotlib_1_6_0.png)
 
 
 
@@ -199,7 +199,7 @@ fig
 
 
 
-!['abc'](/matplotlib_1_files/matplotlib_1_7_0.png)
+![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-img/matplotlib_1_7_0.png)
 
 
 
@@ -230,7 +230,7 @@ fig
 
 
 
-!['asd'](/matplotlib_1_files/to/matplotlib_1_8_0.png)
+![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-img/matplotlib_1_8_0.png)
 
 
 
@@ -247,11 +247,12 @@ fig
 
 
 
-![Alt text](matplotlib_1_files/to/matplotlib_1_9_0.png)
+![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter-img/matplotlib_1_9_0.png)
 
 
 
 ## 后记
 
+嗨呀好气啊！自这篇文章写完之后的一个多小时我都在纳闷为什么markdown里的图片链接不被解析，原来图片在仓库的目录只能在分支下面的第一个文件夹内，如果目录多了就无法解析！！
 
 —— Simon 于2017.5
