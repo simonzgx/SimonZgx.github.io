@@ -12,12 +12,12 @@ baseurl: ""                             # for example, '/blog' if your blog host
 
 # SNS settings
 RSS: false
-#weibo_username:     huxpro
+#weibo_username:     
 zhihu_username:    zhang-hu-20-73
 github_username:   SimonZgx
-#twitter_username:  huxpro
-#facebook_username:  huxpro
-# linkedin_username:  firstname-lastname-idxxxx
+#twitter_username:  
+#facebook_username:  
+# linkedin_username:  
 
 
 
@@ -26,7 +26,7 @@ github_username:   SimonZgx
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
@@ -51,7 +51,7 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-#duoshuo_username: huxblog
+#duoshuo_username: 
 # Share component is depend on Comment so we can NOT use share only.
 #duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
@@ -63,8 +63,8 @@ kramdown:
 # ba_track_id: [your track id]
 
 # Google Analytics
-#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-#ga_domain: huangxuan.me
+#ga_track_id: 
+#ga_domain: 
 
 
 
