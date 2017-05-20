@@ -63,7 +63,7 @@ plt.show()
 ```
 
 
-![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyterImg/matplotlib_1_1_0.png)
+ ![image](https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyterImg/matplotlib_1_1_0.png)
 
 
 
