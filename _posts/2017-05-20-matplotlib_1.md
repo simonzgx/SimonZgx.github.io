@@ -30,7 +30,9 @@ ps:
 ## 正文
 
 #### 1. 首先查看当前Anaconda的版本
-
+    
+    
+    
 ```python
 import sys
 
@@ -47,7 +49,9 @@ sys.version
 
 
 #### 2. 下面开始我们第一张三角函数的绘制啦
-
+    
+    
+    
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
@@ -69,7 +73,9 @@ plt.show()
 
 
 #### 3. pyplot默认的绘图貌似有点单调哦
-
+    
+    
+    
 ```python
 fig = plt.figure(figsize=(10, 6), dpi=80)
 plt.plot(x, c, 'b-', lw=2.5)
@@ -86,7 +92,9 @@ plt.show()
 
 
 #### 4. 强迫症患者表示坐标就不能稍微宽一点嘛
-
+    
+    
+    
 ```python
 plt.xlim(x.min()*1.1, x.max()*1.1)
 plt.ylim(c.min()*1.1, c.max()*1.1)
@@ -104,7 +112,9 @@ fig
 
 
 #### 5. 舒服多了，但是x坐标不太符合我们对三角函数的认知啊
-
+    
+    
+    
 ```python
 plt.xticks([-np.pi, -np.pi/2, 0, np.pi/2, np.pi])
 plt.yticks([-1, 0, 1])
@@ -122,7 +132,9 @@ fig
 
 
 #### 6. 看能不能再改进一下
-
+    
+    
+    
 ```python
 plt.xticks([-np.pi, -np.pi/2, 0, np.pi/2, np.pi],
            [r'$-\pi$', r'$-\pi/2$',  r'$0$', r'$\pi/2$',r'$+\pi$'])
@@ -141,7 +153,9 @@ fig
 
 
 #### 7. 恩好多了，但是这个框框型的坐标系还是不能忍啊!
-
+    
+    
+    
 ```python
 fig = plt.figure(figsize=(10, 6), dpi=80)
 
@@ -173,7 +187,9 @@ fig
 
 
 #### 8.接下来是图例部分
-
+    
+    
+    
 ```python
 plt.plot(x, c, 'b-', lw=2.5, label='cosine')
 plt.plot(x, s, 'r-', lw=2.5, label='sine')
@@ -205,7 +221,9 @@ fig
 
 
 #### 9. 接下来这个部分真的preety coll!
-
+    
+    
+    
 ```python
 t = 2*np.pi/3
 
@@ -236,7 +254,9 @@ fig
 
 
 #### 10. 最后对label稍作修改，打完收工
-
+    
+    
+    
 ```python
 for label in ax.get_xticklabels() + ax.get_yticklabels():
     label.set_fontsize(16)
@@ -252,7 +272,8 @@ fig
 
 
 ## 后记
-
+    
+    
 嗨呀好气啊！自这篇文章写完之后的一个多小时我都在纳闷为什么markdown里的图片链接不被解析，原来图片在仓库的目录只能在分支下面的第一个文件夹内，如果目录多了就无法解析！！
 
 上面这句话依然不对，如果用本地文件的目录是可以多个文件夹的
