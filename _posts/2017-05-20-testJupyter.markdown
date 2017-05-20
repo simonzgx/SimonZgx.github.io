@@ -2,7 +2,7 @@
 layout:     post
 title:      "Test Jupyter"
 subtitle:   " \"Test Jupyter\""
-date:       2017-04-31 19:00:00
+date:       2017-05-20 19:00:00
 author:     "Simon"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
