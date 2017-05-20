@@ -30,11 +30,8 @@ ps:
 ## 正文 
 <br /> 
 ##### 点击使用Jupyter nbviewer<a href="http://nbviewer.jupyter.org/github/SimonZgx/SimonZgx.github.io/blob/master/jupyter/jupyters/matplotlib_1.ipynb">运行代码</a>
-<br /> 
 #### 1. 首先查看当前Anaconda的版本
-    
-    
-    
+<br />  
 ```python
 import sys
 
@@ -51,9 +48,7 @@ sys.version
 
 
 #### 2. 下面开始我们第一张三角函数的绘制啦
-    
-     
-	 
+<br /> 
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
@@ -75,9 +70,7 @@ plt.show()
 
 
 #### 3. pyplot默认的绘图貌似有点单调哦
-    
-    
-    
+<br /> 
 ```python
 fig = plt.figure(figsize=(10, 6), dpi=80)
 plt.plot(x, c, 'b-', lw=2.5)
@@ -94,9 +87,7 @@ plt.show()
 
 
 #### 4. 强迫症患者表示坐标就不能稍微宽一点嘛
-    
-    
-    
+<br /> 
 ```python
 plt.xlim(x.min()*1.1, x.max()*1.1)
 plt.ylim(c.min()*1.1, c.max()*1.1)
@@ -114,9 +105,7 @@ fig
 
 
 #### 5. 舒服多了，但是x坐标不太符合我们对三角函数的认知啊
-    
-    
-    
+<br /> 
 ```python
 plt.xticks([-np.pi, -np.pi/2, 0, np.pi/2, np.pi])
 plt.yticks([-1, 0, 1])
@@ -134,9 +123,7 @@ fig
 
 
 #### 6. 看能不能再改进一下
-    
-    
-    
+<br /> 
 ```python
 plt.xticks([-np.pi, -np.pi/2, 0, np.pi/2, np.pi],
            [r'$-\pi$', r'$-\pi/2$',  r'$0$', r'$\pi/2$',r'$+\pi$'])
@@ -155,9 +142,7 @@ fig
 
 
 #### 7. 恩好多了，但是这个框框型的坐标系还是不能忍啊!
-    
-    
-    
+<br /> 
 ```python
 fig = plt.figure(figsize=(10, 6), dpi=80)
 
@@ -188,10 +173,8 @@ fig
 
 
 
-#### 8.接下来是图例部分
-    
-    
-    
+#### 8.接下来是图例
+<br /> 
 ```python
 plt.plot(x, c, 'b-', lw=2.5, label='cosine')
 plt.plot(x, s, 'r-', lw=2.5, label='sine')
@@ -222,10 +205,8 @@ fig
 
 
 
-#### 9. 接下来这个部分真的preety coll!
-    
-    
-    
+#### 9. 下面这个部分真的preety coll!
+<br /> 
 ```python
 t = 2*np.pi/3
 
@@ -256,9 +237,7 @@ fig
 
 
 #### 10. 最后对label稍作修改，打完收工
-    
-    
-    
+<br /> 
 ```python
 for label in ax.get_xticklabels() + ax.get_yticklabels():
     label.set_fontsize(16)
