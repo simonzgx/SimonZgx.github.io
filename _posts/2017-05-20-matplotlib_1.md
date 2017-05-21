@@ -4,7 +4,7 @@ title:      "Python 数据可视化--matplotlib学习笔记（一）"
 subtitle:   " \"Python, Data Analyse\""
 date:       2017-05-20 12:00:00
 author:     "Simon"
-header-img: "img/coldplay.jpg"
+header-img: "img/post-2017-05-20.jpg"
 catalog: true
 tags:
     - Python
@@ -20,7 +20,9 @@ tags:
 
 遂百度了一篇教程，手动敲了一遍，做此记录以备日后学习用
 
-本帖是学习记录的第一帖，接下来的几篇会尽量在两周内更完，话说下个月考六级哦。。。
+本帖是学习记录的第一帖，主要介绍matplotlib中的线性图的画法
+
+接下来的几篇会尽量在两周内更完，话说下个月考六级哦。。。
 
 ps:
 	*今天在博客上更新了jupyter组件，以后发代码类博客就不用那么麻烦啦lalala~~
@@ -29,7 +31,7 @@ ps:
 	
 ## 正文 
 <br /> 
-##### 点击使用Jupyter nbviewer<a href="http://nbviewer.jupyter.org/github/SimonZgx/SimonZgx.github.io/blob/master/jupyter/jupyters/matplotlib_1.ipynb">运行代码</a>
+##### 点击使用Jupyter nbviewer<a href="http://nbviewer.jupyter.org/github/SimonZgx/SimonZgx.github.io/blob/master/jupyter/jupyters/matplotlib_1.ipynb">查看代码</a>
 #### 1. 首先查看当前Anaconda的版本
 <br />  
 ```python

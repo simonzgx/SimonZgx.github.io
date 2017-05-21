@@ -4,7 +4,7 @@ title:      "Python 数据可视化--matplotlib学习笔记（二）"
 subtitle:   " \"Python, Data Analyse\""
 date:       2017-05-21 15:00:00
 author:     "Simon"
-header-img: "jupyter-1-clodplay.jpg"
+header-img: "img/post-2017-05-21.jpg"
 catalog: true
 tags:
     - Python
@@ -51,7 +51,7 @@ plt.show()
 ```
 
 
-![png](matplotlib_2_files/matplotlib_2_0_0.png)
+![png](/jupyter/jupyters/matplotlib_2_files/matplotlib_2_0_0.png)
 
 
 #### 2. 这里就展现了python各种库的数据处理能力的强大之处
@@ -138,7 +138,7 @@ plt.show()
 
 #### 5. 常用的柱状图类型学习完毕，下面开始实践画出全市场股票的pe分布图
 <br /> 
-##### 点击下载<a href="https://github.com/SimonZgx/SimonZgx.github.io/blob/master/jupyter/jupyters/pe_ratio.csv">pe数据</a>
+##### 点击下载<a href="https://github.com/SimonZgx/SimonZgx.github.io/tree/master/jupyter/jupyters">pe数据</a>
 ```python
 df = pd.read_csv('pe_tatio.csv')
 df = pd.DataFrame([df['code'], df['pe_ratio']]).T
@@ -469,7 +469,7 @@ plt.show()
 ![png](/jupyter/jupyters/matplotlib_2_files/matplotlib_2_9_0.png)
 
 
-##### 经过去极值处理的数据已经有了一定的区分度了，下面进行数据标准化处理（此步骤对pe数据来说完全没有意义！！仅为了事件处理方法）
+##### 经过去极值处理的数据已经有了一定的区分度了，下面进行数据标准化处理（此步骤对pe数据来说完全没有意义！！仅为了实践处理方法）
 
 ```python
 '''
