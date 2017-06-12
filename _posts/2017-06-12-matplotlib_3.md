@@ -44,7 +44,7 @@ plt.show()
 ![png](/jupyter/jupyters/matplotlib_3_files/matplotlib_3_0_0.png)
 
 
-#### 2. 下面是另外一种可以显示矩阵的图
+#### 2. 下面是另外一种很神奇的可以显示矩阵的图
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -184,7 +184,7 @@ print (sum((np.multiply(b,b))-np.mean(b)*np.mean(b))/3)
     4.91666666667
     
 
-![png](/jupyter/jupyters/matplotlib_3_files/matplotlib_cov.png)
+![png](/jupyter/jupyters/matplotlib_3_files/matplotlib_cov.jpg)
 ```python
 vc=[1,2,39,0,8]
 vb=[1,2,38,0,8]
@@ -198,7 +198,7 @@ print (corrcoef(vc,vb))
      [ 0.99998623  1.        ]]
     
 
-![png](/jupyter/jupyters/matplotlib_3_files/matplotlib_corr.png)
+![png](/jupyter/jupyters/matplotlib_3_files/matplotlib_corr.jpg)
 
 
 #### 5. 画图
@@ -230,8 +230,8 @@ plt.show()
 ![png](/jupyter/jupyters/matplotlib_3_files/matplotlib_3_5_0.png)
 
 
-##### 图中显示越浅的颜色说明对应的数字越大，即相关性越强
-##### 具体表现为股票在走势上高度一致
+###### 图中显示越浅的颜色说明对应的数字越大，即相关性越强
+###### 具体表现为股票在走势上高度一致
 
 #### 6. 下面画出工行和建行今年的走势
 ```python
