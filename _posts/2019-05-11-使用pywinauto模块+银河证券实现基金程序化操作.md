@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      "Python 数据可视化--matplotlib学习笔记（二）"
+title:      "使用pywinauto模块+银河证券实现基金程序化操作"
 subtitle:   " \"Python, Data Analyse\""
-date:       2017-05-21 15:00:00
+date:       2019-05-11 15:00:00
 author:     "Simon"
 header-img: "img/post-2017-05-21.jpg"
 catalog: true
