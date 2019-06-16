@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "使用pywinauto模块+银河证券实现基金程序化操作"
-subtitle:   " \"Python, Data Analyse\""
+subtitle:   " \"程序化交易入门\""
 date:       2019-05-11 15:00:00
 author:     "Simon"
 header-img: "img/soochow university-1.jpg"
@@ -21,40 +21,30 @@ tags:
 
 最先想到的是用python的[pywinauto](https://pywinauto.readthedocs.io/en/latest/)库来操作券商下单软件
 
-其实就是写一个按键精灵程序
+简单的说就是写一个按键精灵程序
 
-## 正文 
+** 本篇文章需要准备的程序：**   
+
+1. python3 + pywinauto  
+2. [银河证券网上股票交易系统](http://www.chinastock.com.cn/yhwz/service/download.shtml)
+3. spy++或swapy  
+
+
+## pywinauto模块
+pywinauto经常被用来做Windows程序的自动化测试  
+它能根据程序打开一个应用程序的各级菜单，填写表格，模拟键鼠输入等
 <br /> 
-##### 最先想到的是用python的[pywinauto](https://pywinauto.readthedocs.io/en/latest/)库来操作券商下单软件
-##### 其实就是写一个按键精灵程序
-#### 1. 首先是最基本的柱状图的画法
-<br />  
-```python
-import numpy as np
-import pandas as pd
-import matplotlib.mlab as mlab
-import matplotlib.pyplot as plt
-
-
-np.random.seed(0)
-
-num_bins = 50
-
-mu = 100
-sigma = 15
-x = mu + sigma * np.random.randn(500)
-#np.random.rand(n) 产生标准正态分布， 即均值为0 标准差为1 的高斯分布 扥同于 np.random.normal(0, 1, n)
-# x = mu + sigma * np.random.randn(500) 是产生500个均值为100， 方差为15 的随机数
-# 等于 x = np.random.normal(100, 15, 500)
-fig, ax = plt.subplots()
-n, bins, patches = ax.hist(x, num_bins, normed=1)
-#这里ax.hist()即是画柱状图的函数
-#x 为数据，num_bins为分隔的段数
-plt.show()
+#### 1. 环境准备
+<br /> 
+由于pipy.org在国内ping不同，所有pywinauto模块不能通过pip或者conda安装  
+只能下载到本地安装 
+<br>
+[点击下载](https://github.com/SimonZgx/SimonZgx.github.io/tree/master/soft)pywinaotu到本地后
 ```
+conda install [your directory]
+```
+安装
 
-
-![png](/jupyter/jupyters/matplotlib_2_files/matplotlib_2_0_0.png)
 
 
 #### 2. 这里就展现了python各种库的数据处理能力的强大之处
