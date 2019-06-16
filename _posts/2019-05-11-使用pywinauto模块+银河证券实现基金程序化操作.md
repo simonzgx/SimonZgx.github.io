@@ -30,6 +30,8 @@ tags:
 3. spy++或swapy  
 
 
+<!-- begin merge (remove this line to resolve the conflict) -->
+~ Begin Remote
 ## pywinauto模块
 pywinauto经常被用来做Windows程序的自动化测试  
 它能根据程序打开一个应用程序的各级菜单，填写表格，模拟键鼠输入等
@@ -39,12 +41,15 @@ pywinauto经常被用来做Windows程序的自动化测试
 由于pipy.org在国内ping不同，所有pywinauto模块不能通过pip或者conda安装  
 只能下载到本地安装 
 <br>
-[点击下载](https://github.com/SimonZgx/SimonZgx.github.io/tree/master/soft)pywinaotu到本地后
+[点击下载](https://github.com/SimonZgx/SimonZgx.github.io/tree/master/soft)pywinaotu到本地后  
+使用下列命令安装
 ```
-conda install [your directory]
+conda install [.whl directory]
 ```
-安装
-
+或
+```
+pip install [.whl directory]
+```
 
 
 #### 2. 这里就展现了python各种库的数据处理能力的强大之处
