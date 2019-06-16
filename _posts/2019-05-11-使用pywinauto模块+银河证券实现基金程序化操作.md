@@ -7,19 +7,16 @@ author:     "Simon"
 header-img: "img/post-2017-05-21.jpg"
 catalog: true
 tags:
-    - Python
-    - Data Analyse
+    - Program Trading
 ---
 > “Better code, better life. ”
 
 
 ## 前言
 <br /> 
-这周工作室没开会，so今天有时间再更一篇
+最近有个老哥提醒分级基金套利机会，但是分级基金要一直去刷基金净值就比较烦
 
-本篇主要看了matplotlib的柱状图的画法和一些numpy的函数的使用问题
-
-最后会又一个实践，画出了全市场的pe分布图
+遂想办法用机器撸
 
 ## 正文 
 <br /> 
