@@ -4,10 +4,11 @@ title:      "使用pywinauto模块+银河证券实现基金程序化操作"
 subtitle:   " \"Python, Data Analyse\""
 date:       2019-05-11 15:00:00
 author:     "Simon"
-header-img: "img/post-2017-05-21.jpg"
+header-img: "img/soochow university-1.jpg"
 catalog: true
 tags:
     - Program Trading
+
 ---
 > “Better code, better life. ”
 
@@ -18,9 +19,14 @@ tags:
 
 遂想办法用机器撸
 
+最先想到的是用python的[pywinauto](https://pywinauto.readthedocs.io/en/latest/)库来操作券商下单软件
+
+其实就是写一个按键精灵程序
+
 ## 正文 
 <br /> 
-##### 点击使用Jupyter nbviewer<a href="http://nbviewer.jupyter.org/github/SimonZgx/SimonZgx.github.io/blob/master/jupyter/jupyters/matplotlib_2.ipynb">查看代码</a>
+##### 最先想到的是用python的[pywinauto](https://pywinauto.readthedocs.io/en/latest/)库来操作券商下单软件
+##### 其实就是写一个按键精灵程序
 #### 1. 首先是最基本的柱状图的画法
 <br />  
 ```python
