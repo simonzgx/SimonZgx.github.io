@@ -61,7 +61,7 @@ tags:
   对于python2[官方文档](https://docs.python.org/2/reference/lexical_analysis.html#string-literals)对string类型有如下说明：
 
   ```
-* The backslash (\) character is used to escape characters that otherwise have a special meaning, such as newline, backslash itself, or the quote character.
+  * The backslash (\) character is used to escape characters that otherwise have a special meaning, such as newline, backslash itself, or the quote character.
   * String literals may optionally be prefixed with a letter 'r' or 'R'; such strings are called raw strings and use different rules for interpreting backslash escape sequences. A prefix of 'u' or 'U' makes the string a Unicode string. 
   * A prefix of 'b' or 'B' is ignored in Python 2; it indicates that the literal should become a bytes literal in Python 3 (e.g. when code is automatically converted with 2to3). A 'u' or 'b' prefix may be followed by an 'r' prefix.
   ```
