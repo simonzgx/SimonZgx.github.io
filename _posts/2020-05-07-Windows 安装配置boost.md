@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Windows下安装配置Boost库"
-subtitle:   " \"c++11\""
+subtitle:   " \"c++ boost\""
 date:       2020-05-07 12:00:00
 author:     "Simon"
 catalog: true
