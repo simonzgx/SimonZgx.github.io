@@ -105,10 +105,11 @@ target_link_libraries(${PROJECT_NAME} ${CMAKE_THREAD_LIBS_INIT})
 ```c++
 
 #ifndef GTEST_CONFIGURE_H
+
 #define GTEST_CONFIGURE_H
 
-
 #include <string>
+
 #include <vector>
 
 class Configure
@@ -132,6 +133,7 @@ public:
 
 ```c++
 #include <algorithm>
+
 #include "Configure.h"
 
 /**
