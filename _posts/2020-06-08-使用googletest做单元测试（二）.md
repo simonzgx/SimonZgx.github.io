@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "使用GoogleTest做单元测试(一)"
+title:      "使用GoogleTest做单元测试(二)"
 subtitle:   "初识GTest"
 date:       2020-06-07 13:00:00
 author:     "Simon"
@@ -12,7 +12,7 @@ tags:
 
 > “Better code, better life. ”
 
-# 使用`GoogleTest`做单元测试（一）
+# 使用`GoogleTest`做单元测试（二）
 
 **【本文部分翻译自`GTest`[官方文档](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)】**
 
