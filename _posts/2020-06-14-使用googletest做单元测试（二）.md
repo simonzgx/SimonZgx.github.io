@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "使用GoogleTest做单元测试(二)"
-subtitle:   "初识GTest"
+subtitle:   "GTest进阶"
 date:       2020-06-14 13:00:00
 author:     "Simon"
 catalog: true
