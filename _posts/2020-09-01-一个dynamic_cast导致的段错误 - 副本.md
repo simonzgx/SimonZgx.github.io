@@ -7,7 +7,7 @@ author:     "Simon"
 catalog: true
 header-img: "img/se-1.jpg"
 tags:
-   - Golang
+   - C++
 ---
 
 > “Better code, better life. ”
@@ -58,7 +58,7 @@ void trans_sdk::QtHandler::registerCallback(trans_sdk::CMultiMarketDataIf *cb) {
 
 1. 被转换的指针指向的内存已被free
 2. 被转换的指针不具有多态性
-3. 被转换的指针具有多态性，但有外部库所编译，并且没打开RTTI选项
+3. 被转换的指针具有多态性，但有外部库所编译，并且没打开RTTI(Run-Time Type Identification)选项
 4. 被转换的指针指向的内存不能被访问
 
 
