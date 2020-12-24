@@ -1,0 +1,26 @@
+---
+layout:     post
+title:      "理解Service Mash"
+subtitle:   "\"服务间通信的基础设施\""
+date:       2020-12-25 23:00:00
+author:     "Simon"
+catalog: true
+header-img: "img/Earth-2K-Wallpaper.jpg"
+tags:
+   - C++11
+---
+
+## 初识Service Mash
+
+Service Mesh 又译作 “服务网格”，作为服务间通信的基础设施层。Buoyant 公司的 CEO Willian Morgan 在他的这篇文章 [WHAT’S A Service Mesh? AND WHY DO I NEED ONE?](https://buoyant.io/2017/04/25/whats-a-service-mesh-and-why-do-i-need-one/) 中解释了什么是 Service Mesh，为什么云原生应用需要 Service Mesh。
+
+下面是 [Willian Morgan](https://twitter.com/wm) 对 Service Mesh 的解释。
+
+> *A Service Mesh is a dedicated infrastructure layer for handling service-to-service communication. It’s responsible for the reliable delivery of requests through the complex topology of services that comprise a modern, cloud native application. In practice, the Service Mesh is typically implemented as an array of lightweight network proxies that are deployed alongside application code, without the application needing to be aware.*
+
+翻译成中文是：
+
+> *服务网格（Service Mesh）是处理服务间通信的基础设施层。它负责构成现代云原生应用程序的复杂服务拓扑来可靠地交付请求。在实践中，Service Mesh 通常以轻量级网络代理阵列的形式实现，这些代理与应用程序代码部署在一起，对应用程序来说无需感知代理的存在。*
+
+## Service Mash的特点
+
