@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="031dd1c3-c7e6-435e-b5f8-38ffe1f09f75" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="135" />
+    <option name="y" value="66" />
+    <option name="width" value="1920" />
+    <option name="height" value="1044" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DBE.Init.BalloonShown" value="true" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="108" y="53" width="1536" height="835" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Database" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="4" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496617" />
+      <window_info anchor="right" id="Structure" order="1" side_tool="true" weight="0.25" />
+    </layout>
+  </component>
+</project>
